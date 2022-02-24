@@ -341,7 +341,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(858, 50);
             this.button4.TabIndex = 3;
-            this.button4.Text = "  Дальше";
+            this.button4.Text = "  Далее";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;

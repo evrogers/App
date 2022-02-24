@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            Gnostice.Core.Viewer.PageLayout pageLayout1 = new Gnostice.Core.Viewer.PageLayout();
-            Gnostice.Documents.FormatterSettings formatterSettings1 = new Gnostice.Documents.FormatterSettings();
-            Gnostice.Documents.Spreadsheet.SpreadSheetFormatterSettings spreadSheetFormatterSettings1 = new Gnostice.Documents.Spreadsheet.SpreadSheetFormatterSettings();
-            Gnostice.Documents.PageSettings pageSettings1 = new Gnostice.Documents.PageSettings();
-            Gnostice.Documents.Margins margins1 = new Gnostice.Documents.Margins();
-            Gnostice.Documents.Spreadsheet.SheetOptions sheetOptions1 = new Gnostice.Documents.Spreadsheet.SheetOptions();
-            Gnostice.Documents.Spreadsheet.SheetOptions sheetOptions2 = new Gnostice.Documents.Spreadsheet.SheetOptions();
-            Gnostice.Documents.TXTFormatterSettings txtFormatterSettings1 = new Gnostice.Documents.TXTFormatterSettings();
-            Gnostice.Documents.PageSettings pageSettings2 = new Gnostice.Documents.PageSettings();
-            Gnostice.Documents.Margins margins2 = new Gnostice.Documents.Margins();
-            Gnostice.Core.Graphics.RenderingSettings renderingSettings1 = new Gnostice.Core.Graphics.RenderingSettings();
-            Gnostice.Core.Graphics.ImageRenderingSettings imageRenderingSettings1 = new Gnostice.Core.Graphics.ImageRenderingSettings();
-            Gnostice.Core.Graphics.ResolutionSettings resolutionSettings1 = new Gnostice.Core.Graphics.ResolutionSettings();
-            Gnostice.Core.Graphics.ShapeRenderingSettings shapeRenderingSettings1 = new Gnostice.Core.Graphics.ShapeRenderingSettings();
-            Gnostice.Core.Graphics.TextRenderingSettings textRenderingSettings1 = new Gnostice.Core.Graphics.TextRenderingSettings();
-            Gnostice.Core.Viewer.ViewerSettings viewerSettings1 = new Gnostice.Core.Viewer.ViewerSettings();
-            Gnostice.Core.Viewer.Zoom zoom1 = new Gnostice.Core.Viewer.Zoom();
+            Gnostice.Core.Viewer.PageLayout pageLayout3 = new Gnostice.Core.Viewer.PageLayout();
+            Gnostice.Documents.FormatterSettings formatterSettings3 = new Gnostice.Documents.FormatterSettings();
+            Gnostice.Documents.Spreadsheet.SpreadSheetFormatterSettings spreadSheetFormatterSettings3 = new Gnostice.Documents.Spreadsheet.SpreadSheetFormatterSettings();
+            Gnostice.Documents.PageSettings pageSettings5 = new Gnostice.Documents.PageSettings();
+            Gnostice.Documents.Margins margins5 = new Gnostice.Documents.Margins();
+            Gnostice.Documents.Spreadsheet.SheetOptions sheetOptions5 = new Gnostice.Documents.Spreadsheet.SheetOptions();
+            Gnostice.Documents.Spreadsheet.SheetOptions sheetOptions6 = new Gnostice.Documents.Spreadsheet.SheetOptions();
+            Gnostice.Documents.TXTFormatterSettings txtFormatterSettings3 = new Gnostice.Documents.TXTFormatterSettings();
+            Gnostice.Documents.PageSettings pageSettings6 = new Gnostice.Documents.PageSettings();
+            Gnostice.Documents.Margins margins6 = new Gnostice.Documents.Margins();
+            Gnostice.Core.Graphics.RenderingSettings renderingSettings3 = new Gnostice.Core.Graphics.RenderingSettings();
+            Gnostice.Core.Graphics.ImageRenderingSettings imageRenderingSettings3 = new Gnostice.Core.Graphics.ImageRenderingSettings();
+            Gnostice.Core.Graphics.ResolutionSettings resolutionSettings3 = new Gnostice.Core.Graphics.ResolutionSettings();
+            Gnostice.Core.Graphics.ShapeRenderingSettings shapeRenderingSettings3 = new Gnostice.Core.Graphics.ShapeRenderingSettings();
+            Gnostice.Core.Graphics.TextRenderingSettings textRenderingSettings3 = new Gnostice.Core.Graphics.TextRenderingSettings();
+            Gnostice.Core.Viewer.ViewerSettings viewerSettings3 = new Gnostice.Core.Viewer.ViewerSettings();
+            Gnostice.Core.Viewer.Zoom zoom3 = new Gnostice.Core.Viewer.Zoom();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.runGameButton = new System.Windows.Forms.Button();
             this.subj7 = new System.Windows.Forms.Button();
@@ -366,6 +366,54 @@
             this.toolStripMenuItem186 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem187 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem188 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dropDownMenuSubj1Pract = new App.DropDownMenu(this.components);
+            this.toolStripMenuItem189 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem190 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem191 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem192 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem193 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem194 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem195 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem196 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem197 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem198 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem199 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem200 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem201 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem202 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem203 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dropDownMenuSubj1Present = new App.DropDownMenu(this.components);
+            this.toolStripMenuItem204 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem205 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem206 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem207 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem208 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem209 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem210 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem211 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem212 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem213 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem214 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem215 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem216 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem217 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem218 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem219 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem220 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem221 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem222 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem223 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem224 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem225 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem226 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem227 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem228 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem229 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem230 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem231 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem232 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem233 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem234 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -394,6 +442,8 @@
             this.AlgorithmVideos.SuspendLayout();
             this.CSharpVideos.SuspendLayout();
             this.dropDownMenuSubj1Lect.SuspendLayout();
+            this.dropDownMenuSubj1Pract.SuspendLayout();
+            this.dropDownMenuSubj1Present.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -700,10 +750,11 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(400, 100);
             this.button4.TabIndex = 2;
-            this.button4.Text = "   Материалы";
+            this.button4.Text = "  Презентации";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -721,6 +772,7 @@
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -776,78 +828,78 @@
             this.documentViewer1.NavigationPane.WidthPercentage = 20;
             this.documentViewer1.Orientation = Gnostice.Core.Viewer.ViewerOrientation.Vertical;
             this.documentViewer1.PageBreakWidth = 10F;
-            pageLayout1.Columns = 1;
-            pageLayout1.HorizontalSpacing = 5D;
-            pageLayout1.LayoutMode = Gnostice.Core.Viewer.PageLayoutMode.SinglePage;
-            pageLayout1.ScrollMode = Gnostice.Core.Viewer.ScrollMode.Continuous;
-            pageLayout1.ShowCoverPage = false;
-            pageLayout1.VerticalSpacing = 5D;
-            this.documentViewer1.PageLayout = pageLayout1;
+            pageLayout3.Columns = 1;
+            pageLayout3.HorizontalSpacing = 5D;
+            pageLayout3.LayoutMode = Gnostice.Core.Viewer.PageLayoutMode.SinglePage;
+            pageLayout3.ScrollMode = Gnostice.Core.Viewer.ScrollMode.Continuous;
+            pageLayout3.ShowCoverPage = false;
+            pageLayout3.VerticalSpacing = 5D;
+            this.documentViewer1.PageLayout = pageLayout3;
             this.documentViewer1.PageRotation = Gnostice.Core.Viewer.RotationAngle.Zero;
-            spreadSheetFormatterSettings1.FormattingMode = Gnostice.Core.DOM.FormattingMode.PreferDocumentSettings;
-            pageSettings1.Height = 11.6929F;
-            margins1.Bottom = 1F;
-            margins1.Footer = 0F;
-            margins1.Header = 0F;
-            margins1.Left = 1F;
-            margins1.Right = 1F;
-            margins1.Top = 1F;
-            pageSettings1.Margin = margins1;
-            pageSettings1.Orientation = Gnostice.Core.Graphics.Orientation.Portrait;
-            pageSettings1.PageSize = Gnostice.Documents.PageSize.A4;
-            pageSettings1.Width = 8.2677F;
-            spreadSheetFormatterSettings1.PageSettings = pageSettings1;
-            sheetOptions1.Print = false;
-            sheetOptions1.View = true;
-            spreadSheetFormatterSettings1.ShowGridlines = sheetOptions1;
-            sheetOptions2.Print = false;
-            sheetOptions2.View = true;
-            spreadSheetFormatterSettings1.ShowHeadings = sheetOptions2;
-            formatterSettings1.SpreadSheet = spreadSheetFormatterSettings1;
-            pageSettings2.Height = 11.6929F;
-            margins2.Bottom = 1F;
-            margins2.Footer = 0F;
-            margins2.Header = 0F;
-            margins2.Left = 1F;
-            margins2.Right = 1F;
-            margins2.Top = 1F;
-            pageSettings2.Margin = margins2;
-            pageSettings2.Orientation = Gnostice.Core.Graphics.Orientation.Portrait;
-            pageSettings2.PageSize = Gnostice.Documents.PageSize.A4;
-            pageSettings2.Width = 8.2677F;
-            txtFormatterSettings1.PageSettings = pageSettings2;
-            formatterSettings1.TXT = txtFormatterSettings1;
-            this.documentViewer1.Preferences.FormatterSettings = formatterSettings1;
+            spreadSheetFormatterSettings3.FormattingMode = Gnostice.Core.DOM.FormattingMode.PreferDocumentSettings;
+            pageSettings5.Height = 11.6929F;
+            margins5.Bottom = 1F;
+            margins5.Footer = 0F;
+            margins5.Header = 0F;
+            margins5.Left = 1F;
+            margins5.Right = 1F;
+            margins5.Top = 1F;
+            pageSettings5.Margin = margins5;
+            pageSettings5.Orientation = Gnostice.Core.Graphics.Orientation.Portrait;
+            pageSettings5.PageSize = Gnostice.Documents.PageSize.A4;
+            pageSettings5.Width = 8.2677F;
+            spreadSheetFormatterSettings3.PageSettings = pageSettings5;
+            sheetOptions5.Print = false;
+            sheetOptions5.View = true;
+            spreadSheetFormatterSettings3.ShowGridlines = sheetOptions5;
+            sheetOptions6.Print = false;
+            sheetOptions6.View = true;
+            spreadSheetFormatterSettings3.ShowHeadings = sheetOptions6;
+            formatterSettings3.SpreadSheet = spreadSheetFormatterSettings3;
+            pageSettings6.Height = 11.6929F;
+            margins6.Bottom = 1F;
+            margins6.Footer = 0F;
+            margins6.Header = 0F;
+            margins6.Left = 1F;
+            margins6.Right = 1F;
+            margins6.Top = 1F;
+            pageSettings6.Margin = margins6;
+            pageSettings6.Orientation = Gnostice.Core.Graphics.Orientation.Portrait;
+            pageSettings6.PageSize = Gnostice.Documents.PageSize.A4;
+            pageSettings6.Width = 8.2677F;
+            txtFormatterSettings3.PageSettings = pageSettings6;
+            formatterSettings3.TXT = txtFormatterSettings3;
+            this.documentViewer1.Preferences.FormatterSettings = formatterSettings3;
             this.documentViewer1.Preferences.KeyNavigation = true;
-            imageRenderingSettings1.InterpolationMode = Gnostice.Core.Graphics.InterpolationMode.Bicubic;
-            renderingSettings1.Image = imageRenderingSettings1;
-            resolutionSettings1.DpiX = 96F;
-            resolutionSettings1.DpiY = 96F;
-            resolutionSettings1.ResolutionMode = Gnostice.Core.Graphics.ResolutionMode.UseSource;
-            renderingSettings1.Resolution = resolutionSettings1;
-            shapeRenderingSettings1.CompositingMode = Gnostice.Core.Graphics.CompositingMode.SourceOver;
-            shapeRenderingSettings1.CompositingQuality = Gnostice.Core.Graphics.CompositingQuality.Default;
-            shapeRenderingSettings1.PixelOffsetMode = Gnostice.Core.Graphics.PixelOffsetMode.HighQuality;
-            shapeRenderingSettings1.SmoothingMode = Gnostice.Core.Graphics.SmoothingMode.AntiAlias;
-            renderingSettings1.Shape = shapeRenderingSettings1;
-            textRenderingSettings1.TextContrast = 4;
-            textRenderingSettings1.TextRenderingHint = Gnostice.Core.Graphics.TextRenderingHint.AntiAlias;
-            renderingSettings1.Text = textRenderingSettings1;
-            this.documentViewer1.Preferences.RenderingSettings = renderingSettings1;
+            imageRenderingSettings3.InterpolationMode = Gnostice.Core.Graphics.InterpolationMode.Bicubic;
+            renderingSettings3.Image = imageRenderingSettings3;
+            resolutionSettings3.DpiX = 96F;
+            resolutionSettings3.DpiY = 96F;
+            resolutionSettings3.ResolutionMode = Gnostice.Core.Graphics.ResolutionMode.UseSource;
+            renderingSettings3.Resolution = resolutionSettings3;
+            shapeRenderingSettings3.CompositingMode = Gnostice.Core.Graphics.CompositingMode.SourceOver;
+            shapeRenderingSettings3.CompositingQuality = Gnostice.Core.Graphics.CompositingQuality.Default;
+            shapeRenderingSettings3.PixelOffsetMode = Gnostice.Core.Graphics.PixelOffsetMode.HighQuality;
+            shapeRenderingSettings3.SmoothingMode = Gnostice.Core.Graphics.SmoothingMode.AntiAlias;
+            renderingSettings3.Shape = shapeRenderingSettings3;
+            textRenderingSettings3.TextContrast = 4;
+            textRenderingSettings3.TextRenderingHint = Gnostice.Core.Graphics.TextRenderingHint.AntiAlias;
+            renderingSettings3.Text = textRenderingSettings3;
+            this.documentViewer1.Preferences.RenderingSettings = renderingSettings3;
             this.documentViewer1.Preferences.Units = Gnostice.Core.Graphics.MeasurementUnit.Inches;
-            viewerSettings1.AllowInteractivity = false;
-            viewerSettings1.LowestRenderingDPI = 0F;
-            viewerSettings1.MouseMode = Gnostice.Core.DOM.CursorPreferences.Pan;
-            viewerSettings1.Orientation = Gnostice.Core.Viewer.ViewerOrientation.Vertical;
-            viewerSettings1.PageBreakWidth = 10F;
-            viewerSettings1.PageLayout = pageLayout1;
-            viewerSettings1.Rotation = Gnostice.Core.Viewer.RotationAngle.Zero;
-            zoom1.InternalZoomMode = Gnostice.Core.Viewer.ZoomMode.CustomZoomPercent;
-            zoom1.InternalZoomPercent = 90D;
-            zoom1.ZoomMode = Gnostice.Core.Viewer.ZoomMode.CustomZoomPercent;
-            zoom1.ZoomPercent = 90D;
-            viewerSettings1.Zoom = zoom1;
-            this.documentViewer1.Preferences.ViewerSettings = viewerSettings1;
+            viewerSettings3.AllowInteractivity = false;
+            viewerSettings3.LowestRenderingDPI = 0F;
+            viewerSettings3.MouseMode = Gnostice.Core.DOM.CursorPreferences.Pan;
+            viewerSettings3.Orientation = Gnostice.Core.Viewer.ViewerOrientation.Vertical;
+            viewerSettings3.PageBreakWidth = 10F;
+            viewerSettings3.PageLayout = pageLayout3;
+            viewerSettings3.Rotation = Gnostice.Core.Viewer.RotationAngle.Zero;
+            zoom3.InternalZoomMode = Gnostice.Core.Viewer.ZoomMode.CustomZoomPercent;
+            zoom3.InternalZoomPercent = 90D;
+            zoom3.ZoomMode = Gnostice.Core.Viewer.ZoomMode.CustomZoomPercent;
+            zoom3.ZoomPercent = 90D;
+            viewerSettings3.Zoom = zoom3;
+            this.documentViewer1.Preferences.ViewerSettings = viewerSettings3;
             this.documentViewer1.Size = new System.Drawing.Size(492, 496);
             this.documentViewer1.TabIndex = 0;
             this.documentViewer1.VScrollBar.Enabled = false;
@@ -3107,7 +3159,7 @@
             this.AlgorithmVideos.MenuItemTextColor = System.Drawing.Color.Empty;
             this.AlgorithmVideos.Name = "JavaVideos";
             this.AlgorithmVideos.PrimaryColor = System.Drawing.Color.Empty;
-            this.AlgorithmVideos.Size = new System.Drawing.Size(382, 115);
+            this.AlgorithmVideos.Size = new System.Drawing.Size(382, 82);
             this.AlgorithmVideos.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.AlgorithmVideos_ItemClicked);
             // 
             // toolStripMenuItem167
@@ -3287,6 +3339,354 @@
             this.toolStripMenuItem188.Size = new System.Drawing.Size(391, 26);
             this.toolStripMenuItem188.Text = "Хешироваие";
             // 
+            // dropDownMenuSubj1Pract
+            // 
+            this.dropDownMenuSubj1Pract.Font = new System.Drawing.Font("Century Gothic", 8.5F, System.Drawing.FontStyle.Bold);
+            this.dropDownMenuSubj1Pract.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.dropDownMenuSubj1Pract.IsMainMenu = false;
+            this.dropDownMenuSubj1Pract.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem189,
+            this.toolStripMenuItem190,
+            this.toolStripMenuItem191,
+            this.toolStripMenuItem192,
+            this.toolStripMenuItem193,
+            this.toolStripMenuItem194,
+            this.toolStripMenuItem195,
+            this.toolStripMenuItem196,
+            this.toolStripMenuItem197,
+            this.toolStripMenuItem198,
+            this.toolStripMenuItem199,
+            this.toolStripMenuItem200,
+            this.toolStripMenuItem201,
+            this.toolStripMenuItem202,
+            this.toolStripMenuItem203});
+            this.dropDownMenuSubj1Pract.MenuItemHeight = 20;
+            this.dropDownMenuSubj1Pract.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.dropDownMenuSubj1Pract.Name = "dropDownMenuSubj1Pract";
+            this.dropDownMenuSubj1Pract.PrimaryColor = System.Drawing.Color.Empty;
+            this.dropDownMenuSubj1Pract.Size = new System.Drawing.Size(301, 394);
+            this.dropDownMenuSubj1Pract.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.dropDownMenuSubj1Pract_ItemClicked);
+            // 
+            // toolStripMenuItem189
+            // 
+            this.toolStripMenuItem189.Name = "toolStripMenuItem189";
+            this.toolStripMenuItem189.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem189.Text = "Лабораторная работа 1";
+            // 
+            // toolStripMenuItem190
+            // 
+            this.toolStripMenuItem190.Name = "toolStripMenuItem190";
+            this.toolStripMenuItem190.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem190.Text = "Лабораторная работа 2";
+            // 
+            // toolStripMenuItem191
+            // 
+            this.toolStripMenuItem191.Name = "toolStripMenuItem191";
+            this.toolStripMenuItem191.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem191.Text = "Лабораторная работа 3";
+            // 
+            // toolStripMenuItem192
+            // 
+            this.toolStripMenuItem192.Name = "toolStripMenuItem192";
+            this.toolStripMenuItem192.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem192.Text = "Лабораторная работа 4";
+            // 
+            // toolStripMenuItem193
+            // 
+            this.toolStripMenuItem193.Name = "toolStripMenuItem193";
+            this.toolStripMenuItem193.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem193.Text = "Лабораторная работа 5";
+            // 
+            // toolStripMenuItem194
+            // 
+            this.toolStripMenuItem194.Name = "toolStripMenuItem194";
+            this.toolStripMenuItem194.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem194.Text = "Лабораторная работа 6";
+            // 
+            // toolStripMenuItem195
+            // 
+            this.toolStripMenuItem195.Name = "toolStripMenuItem195";
+            this.toolStripMenuItem195.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem195.Text = "Лабораторная работа 7";
+            // 
+            // toolStripMenuItem196
+            // 
+            this.toolStripMenuItem196.Name = "toolStripMenuItem196";
+            this.toolStripMenuItem196.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem196.Text = "Лабораторная работа 8";
+            // 
+            // toolStripMenuItem197
+            // 
+            this.toolStripMenuItem197.Name = "toolStripMenuItem197";
+            this.toolStripMenuItem197.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem197.Text = "Лабораторная работа 9";
+            // 
+            // toolStripMenuItem198
+            // 
+            this.toolStripMenuItem198.Name = "toolStripMenuItem198";
+            this.toolStripMenuItem198.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem198.Text = "Лабораторная работа 10";
+            // 
+            // toolStripMenuItem199
+            // 
+            this.toolStripMenuItem199.Name = "toolStripMenuItem199";
+            this.toolStripMenuItem199.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem199.Text = "Лабораторная работа 11";
+            // 
+            // toolStripMenuItem200
+            // 
+            this.toolStripMenuItem200.Name = "toolStripMenuItem200";
+            this.toolStripMenuItem200.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem200.Text = "Лабораторная работа 12";
+            // 
+            // toolStripMenuItem201
+            // 
+            this.toolStripMenuItem201.Name = "toolStripMenuItem201";
+            this.toolStripMenuItem201.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem201.Text = "Лабораторная работа 13";
+            // 
+            // toolStripMenuItem202
+            // 
+            this.toolStripMenuItem202.Name = "toolStripMenuItem202";
+            this.toolStripMenuItem202.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem202.Text = "Лабораторная работа 14";
+            // 
+            // toolStripMenuItem203
+            // 
+            this.toolStripMenuItem203.Name = "toolStripMenuItem203";
+            this.toolStripMenuItem203.Size = new System.Drawing.Size(300, 26);
+            this.toolStripMenuItem203.Text = "Лабораторная работа 15";
+            // 
+            // dropDownMenuSubj1Present
+            // 
+            this.dropDownMenuSubj1Present.Font = new System.Drawing.Font("Century Gothic", 8.5F, System.Drawing.FontStyle.Bold);
+            this.dropDownMenuSubj1Present.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.dropDownMenuSubj1Present.IsMainMenu = false;
+            this.dropDownMenuSubj1Present.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem204,
+            this.toolStripMenuItem205,
+            this.toolStripMenuItem206,
+            this.toolStripMenuItem207,
+            this.toolStripMenuItem208,
+            this.toolStripMenuItem209,
+            this.toolStripMenuItem210,
+            this.toolStripMenuItem211,
+            this.toolStripMenuItem212,
+            this.toolStripMenuItem213,
+            this.toolStripMenuItem214,
+            this.toolStripMenuItem215,
+            this.toolStripMenuItem216,
+            this.toolStripMenuItem217,
+            this.toolStripMenuItem218,
+            this.toolStripMenuItem219,
+            this.toolStripMenuItem220,
+            this.toolStripMenuItem221,
+            this.toolStripMenuItem222,
+            this.toolStripMenuItem223,
+            this.toolStripMenuItem224,
+            this.toolStripMenuItem225,
+            this.toolStripMenuItem226,
+            this.toolStripMenuItem227,
+            this.toolStripMenuItem228,
+            this.toolStripMenuItem229,
+            this.toolStripMenuItem230,
+            this.toolStripMenuItem231,
+            this.toolStripMenuItem232,
+            this.toolStripMenuItem233,
+            this.toolStripMenuItem234});
+            this.dropDownMenuSubj1Present.MenuItemHeight = 20;
+            this.dropDownMenuSubj1Present.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.dropDownMenuSubj1Present.Name = "dropDownMenuSubj1Present";
+            this.dropDownMenuSubj1Present.PrimaryColor = System.Drawing.Color.Empty;
+            this.dropDownMenuSubj1Present.Size = new System.Drawing.Size(525, 843);
+            this.dropDownMenuSubj1Present.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.dropDownMenuSubj1Present_ItemClicked);
+            // 
+            // toolStripMenuItem204
+            // 
+            this.toolStripMenuItem204.Name = "toolStripMenuItem204";
+            this.toolStripMenuItem204.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem204.Text = "Введение";
+            // 
+            // toolStripMenuItem205
+            // 
+            this.toolStripMenuItem205.Name = "toolStripMenuItem205";
+            this.toolStripMenuItem205.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem205.Text = "Алгоритм. Свойства. Описание";
+            // 
+            // toolStripMenuItem206
+            // 
+            this.toolStripMenuItem206.Name = "toolStripMenuItem206";
+            this.toolStripMenuItem206.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem206.Text = "Библиотеки";
+            // 
+            // toolStripMenuItem207
+            // 
+            this.toolStripMenuItem207.Name = "toolStripMenuItem207";
+            this.toolStripMenuItem207.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem207.Text = "Взаимодействие приложений";
+            // 
+            // toolStripMenuItem208
+            // 
+            this.toolStripMenuItem208.Name = "toolStripMenuItem208";
+            this.toolStripMenuItem208.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem208.Text = "Графические возможности delphi";
+            // 
+            // toolStripMenuItem209
+            // 
+            this.toolStripMenuItem209.Name = "toolStripMenuItem209";
+            this.toolStripMenuItem209.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem209.Text = "Графы";
+            // 
+            // toolStripMenuItem210
+            // 
+            this.toolStripMenuItem210.Name = "toolStripMenuItem210";
+            this.toolStripMenuItem210.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem210.Text = "Итерационные алгоритмы";
+            // 
+            // toolStripMenuItem211
+            // 
+            this.toolStripMenuItem211.Name = "toolStripMenuItem211";
+            this.toolStripMenuItem211.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem211.Text = "Компоненты  Additional";
+            // 
+            // toolStripMenuItem212
+            // 
+            this.toolStripMenuItem212.Name = "toolStripMenuItem212";
+            this.toolStripMenuItem212.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem212.Text = "Компоненты System";
+            // 
+            // toolStripMenuItem213
+            // 
+            this.toolStripMenuItem213.Name = "toolStripMenuItem213";
+            this.toolStripMenuItem213.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem213.Text = "Компоненты Win32";
+            // 
+            // toolStripMenuItem214
+            // 
+            this.toolStripMenuItem214.Name = "toolStripMenuItem214";
+            this.toolStripMenuItem214.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem214.Text = "Компоненты страниц Data Access";
+            // 
+            // toolStripMenuItem215
+            // 
+            this.toolStripMenuItem215.Name = "toolStripMenuItem215";
+            this.toolStripMenuItem215.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem215.Text = "Массивы";
+            // 
+            // toolStripMenuItem216
+            // 
+            this.toolStripMenuItem216.Name = "toolStripMenuItem216";
+            this.toolStripMenuItem216.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem216.Text = "Метод пошаговой детализации";
+            // 
+            // toolStripMenuItem217
+            // 
+            this.toolStripMenuItem217.Name = "toolStripMenuItem217";
+            this.toolStripMenuItem217.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem217.Text = "Мультимедийные возможности delphi";
+            // 
+            // toolStripMenuItem218
+            // 
+            this.toolStripMenuItem218.Name = "toolStripMenuItem218";
+            this.toolStripMenuItem218.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem218.Text = "ООП";
+            // 
+            // toolStripMenuItem219
+            // 
+            this.toolStripMenuItem219.Name = "toolStripMenuItem219";
+            this.toolStripMenuItem219.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem219.Text = "Основы визуального программирования";
+            // 
+            // toolStripMenuItem220
+            // 
+            this.toolStripMenuItem220.Name = "toolStripMenuItem220";
+            this.toolStripMenuItem220.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem220.Text = "Особенности разработки программ под Windows";
+            // 
+            // toolStripMenuItem221
+            // 
+            this.toolStripMenuItem221.Name = "toolStripMenuItem221";
+            this.toolStripMenuItem221.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem221.Text = "Поиск min (max)";
+            // 
+            // toolStripMenuItem222
+            // 
+            this.toolStripMenuItem222.Name = "toolStripMenuItem222";
+            this.toolStripMenuItem222.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem222.Text = "Поиск в ширину и глубину";
+            // 
+            // toolStripMenuItem223
+            // 
+            this.toolStripMenuItem223.Name = "toolStripMenuItem223";
+            this.toolStripMenuItem223.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem223.Text = "Процедуры и функции";
+            // 
+            // toolStripMenuItem224
+            // 
+            this.toolStripMenuItem224.Name = "toolStripMenuItem224";
+            this.toolStripMenuItem224.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem224.Text = "Создание собственных компонентов";
+            // 
+            // toolStripMenuItem225
+            // 
+            this.toolStripMenuItem225.Name = "toolStripMenuItem225";
+            this.toolStripMenuItem225.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem225.Text = "Создание справочной системы";
+            // 
+            // toolStripMenuItem226
+            // 
+            this.toolStripMenuItem226.Name = "toolStripMenuItem226";
+            this.toolStripMenuItem226.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem226.Text = "Создание установочного диска";
+            // 
+            // toolStripMenuItem227
+            // 
+            this.toolStripMenuItem227.Name = "toolStripMenuItem227";
+            this.toolStripMenuItem227.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem227.Text = "Строки";
+            // 
+            // toolStripMenuItem228
+            // 
+            this.toolStripMenuItem228.Name = "toolStripMenuItem228";
+            this.toolStripMenuItem228.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem228.Text = "Структура динамически подключаемых библиотек";
+            // 
+            // toolStripMenuItem229
+            // 
+            this.toolStripMenuItem229.Name = "toolStripMenuItem229";
+            this.toolStripMenuItem229.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem229.Text = "Структура ПМ. Интегрированная среда";
+            // 
+            // toolStripMenuItem230
+            // 
+            this.toolStripMenuItem230.Name = "toolStripMenuItem230";
+            this.toolStripMenuItem230.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem230.Text = "Технологический цикл";
+            // 
+            // toolStripMenuItem231
+            // 
+            this.toolStripMenuItem231.Name = "toolStripMenuItem231";
+            this.toolStripMenuItem231.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem231.Text = "Типизированные файлы";
+            // 
+            // toolStripMenuItem232
+            // 
+            this.toolStripMenuItem232.Name = "toolStripMenuItem232";
+            this.toolStripMenuItem232.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem232.Text = "Типы файлов";
+            // 
+            // toolStripMenuItem233
+            // 
+            this.toolStripMenuItem233.Name = "toolStripMenuItem233";
+            this.toolStripMenuItem233.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem233.Text = "Условный оператор";
+            // 
+            // toolStripMenuItem234
+            // 
+            this.toolStripMenuItem234.Name = "toolStripMenuItem234";
+            this.toolStripMenuItem234.Size = new System.Drawing.Size(524, 26);
+            this.toolStripMenuItem234.Text = "Циклы";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -3340,6 +3740,8 @@
             this.AlgorithmVideos.ResumeLayout(false);
             this.CSharpVideos.ResumeLayout(false);
             this.dropDownMenuSubj1Lect.ResumeLayout(false);
+            this.dropDownMenuSubj1Pract.ResumeLayout(false);
+            this.dropDownMenuSubj1Present.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3665,6 +4067,54 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem186;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem187;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem188;
+        private DropDownMenu dropDownMenuSubj1Pract;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem189;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem190;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem191;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem192;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem193;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem194;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem195;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem196;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem197;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem198;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem199;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem200;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem201;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem202;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem203;
+        private DropDownMenu dropDownMenuSubj1Present;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem204;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem205;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem206;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem207;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem208;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem209;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem210;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem211;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem212;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem213;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem214;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem215;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem216;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem217;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem218;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem219;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem220;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem221;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem222;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem223;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem224;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem225;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem226;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem227;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem228;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem229;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem230;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem231;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem232;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem233;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem234;
     }
 }
 

@@ -1876,5 +1876,234 @@ namespace App
                     }
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj1Pract.IsMainMenu = true;
+            dropDownMenuSubj1Pract.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[0]);
+            dropDownMenuSubj1Pract.Show(button3, button3.Width, 0);
+        }
+
+        private void dropDownMenuSubj1Pract_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToTop(button2, button3, button4, button21);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem189":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 1.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem190":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 2.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem191":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 3.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem192":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 4.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem193":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 5.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem194":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 6.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem195":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 7.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem196":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 8.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem197":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 9.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem198":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 10.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem199":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 11.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem200":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 12.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem201":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 13.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem202":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 14.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem203":
+                    {
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 15.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj1Present.IsMainMenu = true;
+            dropDownMenuSubj1Present.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[0]);
+            dropDownMenuSubj1Present.Show(button4, button4.Width, 0);
+        }
+
+        private void dropDownMenuSubj1Present_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToLeft(button2, button3, button4, button21);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem204":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Введение.pptx"); break;
+                    }
+                case "toolStripMenuItem205":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Алгоритм. Свойства. Описание.pptx"); break;
+                    }
+                case "toolStripMenuItem206":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Библиотеки.pptx"); break;
+                    }
+                case "toolStripMenuItem207":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Взаимодействие приложений.pptx"); break;
+                    }
+                case "toolStripMenuItem208":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Графические возможности delphi.pptx"); break;
+                    }
+                case "toolStripMenuItem209":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Графы.pptx"); break;
+                    }
+                case "toolStripMenuItem210":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Итерационные алгоритмы.pptx"); break;
+                    }
+                case "toolStripMenuItem211":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Компоненты  Additional.pptx"); break;
+                    }
+                case "toolStripMenuItem212":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Компоненты System.pptx"); break;
+                    }
+                case "toolStripMenuItem213":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Компоненты Win32.pptx"); break;
+                    }
+                case "toolStripMenuItem214":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Компоненты страниц Data Access"); break;
+                    }
+                case "toolStripMenuItem215":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Массивы.pptx"); break;
+                    }
+                case "toolStripMenuItem216":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Метод пошаговой детализации.pptx"); break;
+                    }
+                case "toolStripMenuItem217":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Мультимедийные возможности delphi.pptx"); break;
+                    }
+                case "toolStripMenuItem218":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\ООП.pptx"); break;
+                    }
+                case "toolStripMenuItem219":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Основы визуального программирования.pptx"); break;
+                    }
+                case "toolStripMenuItem220":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Особенности разработки программ под Windows.pptx"); break;
+                    }
+                case "toolStripMenuItem221":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Поиск min (max).pptx"); break;
+                    }
+                case "toolStripMenuItem222":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Поиск в ширину и глубину.pptx"); break;
+                    }
+                case "toolStripMenuItem223":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Процедуры и функции.pptx"); break;
+                    }
+                case "toolStripMenuItem224":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Создание собственных компонентов.pptx"); break;
+                    }
+                case "toolStripMenuItem225":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Создание справочной системы.pptx"); break;
+                    }
+                case "toolStripMenuItem226":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Создание установочного диска.pptx"); break;
+                    }
+                case "toolStripMenuItem227":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Строки.pptx"); break;
+                    }
+                case "toolStripMenuItem228":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Структура динамически подключаемых библиотек.pptx"); break;
+                    }
+                case "toolStripMenuItem229":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Структура ПМ. Интегрированная среда.pptx"); break;
+                    }
+                case "toolStripMenuItem230":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Технологический цикл.pptx"); break;
+                    }
+                case "toolStripMenuItem231":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Типизированные файлы.pptx"); break;
+                    }
+                case "toolStripMenuItem232":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Типы файлов.pptx"); break;
+                    }
+                case "toolStripMenuItem233":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Условный оператор.pptx"); break;
+                    }
+                case "toolStripMenuItem234":
+                    {
+                        Process.Start(@"Материалы\Алгоритмизация\Презентации\Циклы.pptx"); break;
+                    }
+            }
+        }
     }
 }
