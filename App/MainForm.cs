@@ -89,6 +89,9 @@ namespace App
             panelMenu.Font = new Font("Century Gothic", 11F, FontStyle.Bold);
             panelSubj.Font = new Font("Century Gothic", 10F, FontStyle.Bold);
             openFileButton.Font = new Font("Century Gothic", 10F, FontStyle.Underline);
+            dropDownMenuSubj1Lect.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            dropDownMenuSubj1Pract.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
+            dropDownMenuSubj1Present.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             dropDownMenuSubj2.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             dropDownMenuSubj3Lect.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
             dropDownMenuSubj3Pract.Font = new Font("Century Gothic", 9F, FontStyle.Bold);
@@ -152,9 +155,8 @@ namespace App
         private void subj1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            button1.Text = "Алгоритмизация";
+            button1.Text = "Основы алгоритмизации и программирования";
             panelSubj.Show();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
             panelSubj1.Show();
             panelSubj2.Hide();
             panelSubj3.Hide();
@@ -162,7 +164,6 @@ namespace App
             panelSubj5.Hide();
             panelSubj6.Hide();
             panelSubj7.Hide();
-            //panelSubj.Controls[0].Show();
             panelMoveToLeft(button2, button3, button4, button21);
         }
 
@@ -178,8 +179,6 @@ namespace App
             panelSubj5.Hide();
             panelSubj6.Hide();
             panelSubj7.Hide();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
-            //panelSubj.Controls[1].Show();
             panelMoveToLeft(button6);
         }
 
@@ -188,8 +187,6 @@ namespace App
             ActivateButton(sender);
             button1.Text = "Конструирование программ и языки программирования";
             panelSubj.Show();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
-            //panelSubj.Controls[2].Show();
             panelSubj3.Show();
             panelSubj1.Hide();
             panelSubj2.Hide();
@@ -205,8 +202,6 @@ namespace App
             ActivateButton(sender);
             button1.Text = "Java: разработка алгоритмов";
             panelSubj.Show();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
-            //panelSubj.Controls[3].Show();
             panelSubj4.Show();
             panelSubj1.Hide();
             panelSubj2.Hide();
@@ -222,8 +217,6 @@ namespace App
             ActivateButton(sender);
             button1.Text = "Java: объектно-ориентированное программирование";
             panelSubj.Show();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
-            //panelSubj.Controls[4].Show();
             panelSubj5.Show();
             panelSubj2.Hide();
             panelSubj3.Hide();
@@ -237,10 +230,8 @@ namespace App
         private void subj6_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            button1.Text = "Инструментальное ПО";
+            button1.Text = "Инструментальное программное обеспечение";
             panelSubj.Show();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
-            //panelSubj.Controls[5].Show();
             panelSubj6.Show();
             panelSubj2.Hide();
             panelSubj3.Hide();
@@ -256,8 +247,6 @@ namespace App
             ActivateButton(sender);
             button1.Text = "Разработка приложений для мобильных устройств";
             panelSubj.Show();
-            //foreach (Panel panel in panelSubj.Controls) { panel.Hide(); }
-            //panelSubj.Controls[6].Show();
             panelSubj7.Show();
             panelSubj2.Hide();
             panelSubj3.Hide();
@@ -265,7 +254,7 @@ namespace App
             panelSubj5.Hide();
             panelSubj6.Hide();
             panelSubj1.Hide();
-            panelMoveToLeft(button20, button19, button18);
+            panelMoveToLeft(button20, button19);
         }
 
         private void openFileButton_Click(object sender, EventArgs e)
@@ -277,14 +266,21 @@ namespace App
         {
             panelSubj.Height = btnHeight;
             panelSubj.Dock = DockStyle.Top;
-            if (btn2 != null && btn3 != null && btn4 == null)
+            if(btn1 != null && btn2 != null && btn3 == null && btn4 == null)
+            {
+                btn1.Dock = DockStyle.Left;
+                btn1.Width = panelSubj.Width / 2;
+                btn2.Dock = DockStyle.Fill;
+                //btn2.Width = panelSubj.Width / 2;
+            }
+            else if (btn2 != null && btn3 != null && btn4 == null)
             {
                 btn1.Dock = DockStyle.Left;
                 btn1.Width = panelSubj.Width / 3;
                 btn2.Dock = DockStyle.Left;
                 btn2.Width = panelSubj.Width / 3;
                 btn3.Dock = DockStyle.Fill;
-                btn3.Width = panelSubj.Width / 3;
+                //btn3.Width = panelSubj.Width / 3;
             }
             else if (btn2 != null && btn3 != null && btn4 != null)
             {
@@ -295,7 +291,7 @@ namespace App
                 btn3.Dock = DockStyle.Left;
                 btn3.Width = panelSubj.Width / 4;
                 btn4.Dock = DockStyle.Fill;
-                btn4.Width = panelSubj.Width / 4;
+                //btn4.Width = panelSubj.Width / 4;
             }
             else
             {
@@ -314,7 +310,12 @@ namespace App
             panelSubj.Width = panelWidth;
             btn1.Dock = DockStyle.Top;
             btn1.Height = btnHeight;
-            if (btn2 != null && btn3 != null && btn4 == null)
+            if (btn1 != null && btn2 != null && btn3 == null && btn4 == null)
+            {
+                btn2.Dock = DockStyle.Top;
+                btn2.Height = btnHeight;
+            }
+            else if (btn2 != null && btn3 != null && btn4 == null)
             {
                 btn2.Dock = DockStyle.Top;
                 btn2.Height = btnHeight;
@@ -1535,7 +1536,7 @@ namespace App
             }
         }
 
-        //Прктикум
+        //Практикум
         private void button13_Click(object sender, EventArgs e)
         {
             dropDownMenuSubj5Pract.IsMainMenu = true;
@@ -1704,6 +1705,8 @@ namespace App
             }
         }
 
+
+        // Алгоритмизация ------------------------------------------------------------------------------
         //Видео
         private void button21_Click(object sender, EventArgs e)
         {
@@ -1746,32 +1749,7 @@ namespace App
             }
         }
 
-        private void openFileButton_MouseMove(object sender, MouseEventArgs e)
-        {
-            openFileButton.ForeColor = ThemeColor.ChangeColorBrightness(currentColor, 0.3);
-        }
-
-        private void openFileButton_MouseLeave(object sender, EventArgs e)
-        {
-            openFileButton.ForeColor = Color.Gainsboro;
-        }
-
-        private void panelVideo_VisibleChanged(object sender, EventArgs e)
-        {
-            if (!panelVideo.Visible)
-            {
-                axWindowsMediaPlayer1.close();
-                panelVideo.Hide();
-            }
-            else panelDoc.Hide();
-        }
-
-        private void panelDoc_VisibleChanged(object sender, EventArgs e)
-        {
-            if (!panelDoc.Visible) panelVideo.Show();
-            else panelVideo.Hide();
-        }
-
+        //Лекции
         private void button2_Click(object sender, EventArgs e)
         {
             dropDownMenuSubj1Lect.IsMainMenu = true;
@@ -1877,6 +1855,7 @@ namespace App
             }
         }
 
+        //Практикум
         private void button3_Click(object sender, EventArgs e)
         {
             dropDownMenuSubj1Pract.IsMainMenu = true;
@@ -1891,82 +1870,83 @@ namespace App
             {
                 case "toolStripMenuItem189":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 1.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 1.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem190":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 2.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 2.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem191":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 3.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 3.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem192":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 4.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 4.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem193":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 5.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 5.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem194":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 6.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 6.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem195":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 7.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 7.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem196":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 8.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 8.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem197":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 9.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 9.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem198":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 10.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 10.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem199":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 11.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 11.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem200":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 12.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 12.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem201":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 13.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 13.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem202":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 14.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 14.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
                 case "toolStripMenuItem203":
                     {
-                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 15.docx";
+                        filePath = @"Материалы\Алгоритмизация\Практика\Лабораторная работа 15.pdf";
                         documentViewer1.LoadDocument(filePath); break;
                     }
             }
         }
 
+        //Презентации
         private void button4_Click(object sender, EventArgs e)
         {
             dropDownMenuSubj1Present.IsMainMenu = true;
@@ -2105,5 +2085,601 @@ namespace App
                     }
             }
         }
+
+
+        // Инструментальное ПО -------------------------------------------------------------------------
+        //Лекции
+        private void button17_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj6Lect.IsMainMenu = true;
+            dropDownMenuSubj6Lect.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[5]);
+            dropDownMenuSubj6Lect.Show(button17, button17.Width, 0);
+        }
+
+        private void dropDownMenuSubj6Lect_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToTop(button17, button16, button15);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem235":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\1 Типы данных.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem236":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\2 Оператор ветвления.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem237":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\3 Циклы.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem238":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\NumPy.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem239":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Pandas.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem240":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Библиотека Wand.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem241":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Введение в Python и Eric.pdf";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem242":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Взаимодействие с интернетом.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem243":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Иерархическая индексация.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem244":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Множества алгебраические.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem245":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Наследование.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem246":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Обмен данными Urllib.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem247":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Объединение наборов данных.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem248":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Операции над массивами библиотеки NumPy.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem249":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Определение классов и создание экземпляра класса.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem250":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Перегрузка операторов, спец методы.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem251":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Передача по HTTP.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem252":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Работа с файлами.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem253":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Разбор адреса.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem254":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Реляционная алгебра.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem255":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Свойства и декораторы.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem256":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Словари.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem257":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Сортировка.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem258":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Списки, кортежи,множества.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem259":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Строки и операции над ними.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem260":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Лекции\Функции, модули, пакеты.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+            }
+        }
+
+        //Практикум
+        private void button16_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj6Pract.IsMainMenu = true;
+            dropDownMenuSubj6Pract.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[5]);
+            dropDownMenuSubj6Pract.Show(button16, button16.Width, 0);
+        }
+
+        private void dropDownMenuSubj6Pract_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToTop(button17, button16, button15);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem261":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 1.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem262":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 2.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem263":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 3.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem264":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 4.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem265":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 5.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem266":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 6.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem267":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 7.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem268":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 8.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem269":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 9.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem270":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 10.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem271":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 11.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem272":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 12.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem273":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 13.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem274":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 14.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem275":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 15.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem276":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 16.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem277":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 17.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem278":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 18.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem279":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 19.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem280":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 20.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem281":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 21.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem282":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 22.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem283":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 23.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem284":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 24.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem285":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 25.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem286":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 26.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem287":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 27.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem288":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 28.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem289":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 29.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem290":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 30.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem291":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 31.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem292":
+                    {
+                        filePath = @"Материалы\Инструментальное ПО\Практика\Лабораторная работа 32.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+            }
+        }
+
+        //Презентации
+        private void button15_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj6Present.IsMainMenu = true;
+            dropDownMenuSubj6Present.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[5]);
+            dropDownMenuSubj6Present.Show(button15, button15.Width, 0);
+        }
+
+        private void dropDownMenuSubj6Present_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToLeft(button17, button16, button15);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem293":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Введение.ppt"); break;
+                    }
+                case "toolStripMenuItem294":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Библиотека Requests.pptx"); break;
+                    }
+                case "toolStripMenuItem295":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Взаимодействие с интернетом.pptx"); break;
+                    }
+                case "toolStripMenuItem296":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Декораторы Python.pptx"); break;
+                    }
+                case "toolStripMenuItem297":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Декораторы.pptx"); break;
+                    }
+                case "toolStripMenuItem298":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Классы.pptx"); break;
+                    }
+                case "toolStripMenuItem299":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Обмен данными с помощью модуля urllib request.pptx"); break;
+                    }
+                case "toolStripMenuItem300":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Программирование на языке Python.ppt"); break;
+                    }
+                case "toolStripMenuItem301":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Работа с файлами.ppt"); break;
+                    }
+                case "toolStripMenuItem302":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Специальные методы и перезагрузка операторов.pptx"); break;
+                    }
+                case "toolStripMenuItem303":
+                    {
+                        Process.Start(@"Материалы\Инструментальное ПО\Презентации\Циклы.pptx"); break;
+                    }
+            }
+        }
+
+
+        // Мобильные приложения ------------------------------------------------------------------------
+        //Практикум
+        private void button19_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj7Pract.IsMainMenu = true;
+            dropDownMenuSubj7Pract.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[6]);
+            dropDownMenuSubj7Pract.Show(button19, button19.Width, 0);
+        }
+
+        private void dropDownMenuSubj7Pract_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToTop(button20, button19);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem304":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 1.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem305":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 2.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem306":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 3.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem307":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 4.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem308":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 5.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem309":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 6.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem310":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 7.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem311":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 8.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem312":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 9.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem313":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 10.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem314":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 11.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem315":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 12.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem316":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 13.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem317":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 14.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem318":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 15.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem319":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 16.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem320":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 17.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem321":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Практика\Лабораторная работа 18.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+            }
+        }
+
+        //Лекции
+        private void button20_Click(object sender, EventArgs e)
+        {
+            dropDownMenuSubj7Lect.IsMainMenu = true;
+            dropDownMenuSubj7Lect.PrimaryColor = ColorTranslator.FromHtml(ThemeColor.ColorList[6]);
+            dropDownMenuSubj7Lect.Show(button20, button20.Width, 0);
+        }
+
+        private void dropDownMenuSubj7Lect_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            panelMoveToTop(button20, button19);
+            switch (e.ClickedItem.Name)
+            {
+                case "toolStripMenuItem322":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\1 Основы создания интерфейса.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem323":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\2 Определение интерфейса в файле XML.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem324":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\3 Работа с ресурсами.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem325":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\4 Activity и жизненный цикл приложения.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem326":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\5 Взаимодействие между Activity.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem327":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\6 Работа с изображениями.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem328":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\7 Адаптеры и списки.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem329":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\8 Сложный список с кнопками.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem330":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\9 Стили.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem331":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\10 Меню.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem332":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\11 Фрагменты.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+                case "toolStripMenuItem333":
+                    {
+                        filePath = @"Материалы\Моб. приложения\Лекции\12 Многопоточность и асинхронность.docx";
+                        documentViewer1.LoadDocument(filePath); break;
+                    }
+            }
+        }
+
+        //----------------------------------------------------------------------------------------------
+        private void openFileButton_MouseMove(object sender, MouseEventArgs e)
+        {
+            openFileButton.ForeColor = ThemeColor.ChangeColorBrightness(currentColor, 0.3);
+        }
+
+        private void openFileButton_MouseLeave(object sender, EventArgs e)
+        {
+            openFileButton.ForeColor = Color.Gainsboro;
+        }
+
+        private void panelVideo_VisibleChanged(object sender, EventArgs e)
+        {
+            if (!panelVideo.Visible)
+            {
+                axWindowsMediaPlayer1.close();
+                panelVideo.Hide();
+            }
+            else panelDoc.Hide();
+        }
+
+        private void panelDoc_VisibleChanged(object sender, EventArgs e)
+        {
+            if (!panelDoc.Visible) panelVideo.Show();
+            else panelVideo.Hide();
+        }
+
     }
 }

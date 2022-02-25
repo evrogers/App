@@ -303,10 +303,10 @@
             this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.button3.Location = new System.Drawing.Point(484, 166);
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.button3.Location = new System.Drawing.Point(427, 166);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(374, 159);
+            this.button3.Size = new System.Drawing.Size(431, 159);
             this.button3.TabIndex = 2;
             this.button3.Text = "Авторы: \r\nпреподаватель О.Л. Иткина\r\nучащаяся 4 курса Е.М. Сиволоб\r\n";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -320,13 +320,12 @@
             this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button5.Location = new System.Drawing.Point(0, 325);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(858, 79);
             this.button5.TabIndex = 4;
             this.button5.Text = "Гомель 2022";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -335,7 +334,7 @@
             this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(0, 404);
             this.button4.Name = "button4";
@@ -355,7 +354,7 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.button2.Location = new System.Drawing.Point(0, 83);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(858, 83);
@@ -371,7 +370,7 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(40)))), ((int)(((byte)(47)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 10F);
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(858, 83);
